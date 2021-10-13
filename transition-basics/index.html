@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition basics</title>
+    <style>
+        /* .frame{
+            width: 640px;
+            height: 640px;
+            overflow: hidden;
+        }
+        .cat:hover{
+            transform:scale(1.5,1.5);
+            opacity: 1;
+        }
+        .cat{
+            opacity: .4;
+            transition-property: transform;
+            transition: duration 1s;
+            transition: opacity 1s;
+        } */
+
+        .shape{
+            width: 200px;
+            height: 25px;
+            border-radius: 5px;
+            margin-bottom: 1px;
+            background-color: grey;
+
+            /* transition-property: transform;
+            transition-duration: 1.5s;
+            transition-timing-function: ease-in;
+            transition-delay: .5s; */
+            transition: background-color 2s ease-in, transform 10s ease-in-out, height 2s ease-in-out;
+        }
+        .shape:hover{
+            background-color: black;
+            transform: translateX(100px) rotate(45deg);
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="frame">
+        <img class="cat" src="cute-cat.jpeg" alt="cat"/>
+    </div> -->
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+</body>
+</html>
