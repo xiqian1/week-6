@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg basics</title>
+</head>
+<body>
+    <svg width="550" height="550">
+        <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="magenta" stop-opacity=".8" />
+                <stop offset="50%" stop-color="black" stop-opacity=".5" />
+                <stop offset="100%" stop-color="cyan" stop-opacity=".8" />
+            </linearGradient>
+        </defs>
+        <!--square-->
+        <rect x="30" y="30" width="240" height="240" fill="url(#gradient1)" />
+
+        <!--circle-->
+        <circle cx="270" cy="150" r="120" fill="rgba(0,0,0,0.5)" stroke="black" />
+
+        <!--triangle-->
+        <polygon points="400,30 270,270 520,270" />
+
+        <line x1="50" y1="150" x2="500" y2="150" stroke="black" stroke-width="10" />
+    </svg>
+</body>
+</html>
